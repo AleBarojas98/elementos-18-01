@@ -28,6 +28,25 @@ public class Direccion {
     private Integer cp; 
     private String municipio; 
 
+    public Direccion(Long id) {
+        this.id = id;
+    }
+
+    public Direccion(Usuario u, String calle, Integer cp, String municipio) {
+        this.u = u;
+        this.calle = calle;
+        this.cp = cp;
+        this.municipio = municipio;
+    }
+
+    public Direccion(Long id, Usuario u, String calle, Integer cp, String municipio) {
+        this.id = id;
+        this.u = u;
+        this.calle = calle;
+        this.cp = cp;
+        this.municipio = municipio;
+    }
+
     public Long getId() {
         return id;
     }
